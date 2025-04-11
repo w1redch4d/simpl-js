@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "text_encoding": "cpp",
+        "typeinfo": "cpp"
+    },
+    "clangd.arguments": [
+       "-header-insertion=never"  // More annoying than helpful
+   ],
+   "clangd.onConfigChanged": "restart",
+   "[cpp]": {
+       "editor.defaultFormatter": "xaver.clang-format"
+   },
+   // Let clangd take care of these features.
+   "C_Cpp.autocomplete": "disabled",
+   "C_Cpp.errorSquiggles": "disabled",
+   "C_Cpp.intelliSenseEngine": "disabled",
+   "editor.tabSize": 2,
+   "editor.fontSize": 12,
+   "editor.formatOnType": true,
+   "editor.inlayHints.enabled": "off",  // Exceeds 80-col limit
+   "editor.rulers": [80],
+   "editor.fontFamily": "'DejaVu Sans Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+}

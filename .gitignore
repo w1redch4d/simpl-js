@@ -1,0 +1,4 @@
+buildtools/*
+buildtools/**/*
+out/*
+out/**/*

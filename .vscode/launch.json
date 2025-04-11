@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "simpl-js Debug",
+            "type": "cppdbg", // "cppdbg" for GDB/LLDB, "cppvsdbg" for Windows Visual Studio debugger
+            "request": "launch",
+            "targetArchitecture": "x64",
+            "program": "${workspaceFolder}/out/simpl-js",
+            "args": ["+="],
+            "cwd": "${workspaceFolder}/out",
+            "environment": [],
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "setupCommands": [
+              {
+                "description": "Enable pretty printing for gdb",
+                "text": "-enable-pretty-printing"
+              }
+            ]
+        }
+    ]
+}

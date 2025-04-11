@@ -1,0 +1,17 @@
+executable("simpl-js") {
+  sources = [
+    "src/main.cc",
+  ]
+
+  deps = [
+    ":jslib_shared",
+  ]
+}
+
+shared_library("jslib_shared") {
+  sources = [
+    "src/jslib/token.h",
+    "src/jslib/token.cc"
+  ]
+  defines = [ "JSLIB_SHARED_IMPLEMENTATION" ]
+}
